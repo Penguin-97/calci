@@ -1,0 +1,114 @@
+/* Reset the box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Calculator container */
+.calculator {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Display area */
+.display {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#display {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+/* Buttons grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button style */
+.button {
+    font-size: 1.6rem;
+    padding: 20px;
+    background-color: #f1f1f1;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #e1e1e1;
+    transform: scale(1.05);
+}
+
+/* Operator button style */
+.operator {
+    background-color: #ff8c00;
+    color: #fff;
+}
+
+.operator:hover {
+    background-color: #ff7000;
+}
+
+/* Function button style */
+.function {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.function:hover {
+    background-color: #45a049;
+}
+
+/* Equal button style */
+.equal {
+    background-color: #007bff;
+    color: #fff;
+    grid-column: span 2;
+}
+
+.equal:hover {
+    background-color: #0056b3;
+}
+
+/* Clear button style */
+.clear {
+    background-color: #f44336;
+    color: white;
+}
+
+.clear:hover {
+    background-color: #d32f2f;
+}
+
+button:active {
+    background-color: #ccc;
+    transform: scale(0.98);
+}
